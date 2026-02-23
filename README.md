@@ -6,7 +6,8 @@ This project demonstrates a WiFi-based Home Automation System using NodeMCU (ESP
 It allows users to control 4 electrical appliances remotely using the Blynk mobile application from anywhere in the world.
 
 The system is simple, scalable, and beginner-friendly for IoT enthusiasts.
-
+<br>
+<br>
 # ⚙️ How It Works
 
 **1.** The ESP8266 connects to a WiFi network.
@@ -22,7 +23,8 @@ The system is simple, scalable, and beginner-friendly for IoT enthusiasts.
 **•** The corresponding relay turns ON or OFF.
 
 **4.** Relays control AC appliances like lights, fans, or sockets.
-
+<br>
+<br>
 # 🔌 Components Used
 | Component                   | Quantity    |
 | --------------------------- | ----------- |
@@ -32,9 +34,11 @@ The system is simple, scalable, and beginner-friendly for IoT enthusiasts.
 | Breadboard                  | 1           |
 | Power Supply (5V)           | 1           |
 | Blynk IoT Mobile App        | 1           |
-
+<br>
+<br>
 # 🧠 Explanation of the Code
-# 1️⃣ Blynk Configuration
+<br>
+1️⃣ Blynk Configuration
 
 **•** Template ID
 
@@ -58,10 +62,77 @@ Each relay is connected to a digital pin of NodeMCU.
 
 # 3️⃣ Virtual Pin Control
 
-``` BLYNK_WRITE(V0) ```
+```cpp
+BLYNK_WRITE(V0)
+```
 
 When the button in the Blynk app changes state: 
 
-1 → Relay ON (LOW signal because relay is active LOW)
+``` 1 ``` → Relay ON (LOW signal because relay is active LOW)
 
-0 → Relay OFF (HIGH signal)
+``` 0 ``` → Relay OFF (HIGH signal)
+
+# 4️⃣ Setup Function
+
+**•** Sets relay pins as OUTPUT.
+
+**•** Turns all relays OFF initially.
+
+**•** Connects to WiFi and Blynk Cloud.
+
+# 5️⃣ Loop Function
+
+```cpp
+Blynk.run();
+```
+
+Keeps the device connected and listens for commands.
+<br>
+<br>
+# 🌍 Applications
+
+**•** Smart Home Automation
+
+**•** Remote Light Control
+
+**•** IoT Learning Projects
+
+**•** Office Appliance Control
+
+**•** Hostel/Room Automation
+
+**•** Energy Management Systems
+<br>
+<br>
+# 🔐 Safety Notice
+
+⚠️ This project controls high-voltage AC appliances.
+Ensure:
+
+**•** Proper insulation
+
+**•** Safe wiring
+
+**•** Use of protective casing
+
+**•** Avoid touching live wires
+<br>
+<br>
+# 📱 Blynk App Configuration
+
+**•** Create a new Template in Blynk IoT
+
+**•** Add 4 Button Widgets
+
+**•** Assign Virtual Pins V0–V3
+
+**•** Set button mode to **Switch**
+<br>
+<br>
+# 📷 Project Preview
+
+<br>
+<br>
+# 📜 License
+
+This project is open-source and free to use for educational purposes.
