@@ -1,4 +1,7 @@
 # 🏠 ESP8266 Home Automation using Blynk IoT
+
+<br>
+
 # 📌 Introduction
 
 This project demonstrates a WiFi-based Home Automation System using NodeMCU (ESP8266) and the Blynk IoT Cloud Platform.
@@ -8,6 +11,7 @@ It allows users to control 4 electrical appliances remotely using the Blynk mobi
 The system is simple, scalable, and beginner-friendly for IoT enthusiasts.
 <br>
 <br>
+
 # ⚙️ How It Works
 
 **1.** The ESP8266 connects to a WiFi network.
@@ -25,6 +29,7 @@ The system is simple, scalable, and beginner-friendly for IoT enthusiasts.
 **4.** Relays control AC appliances like lights, fans, or sockets.
 <br>
 <br>
+
 # 🔌 Components Used
 | Component                   | Quantity    |
 | --------------------------- | ----------- |
@@ -36,9 +41,11 @@ The system is simple, scalable, and beginner-friendly for IoT enthusiasts.
 | Blynk IoT Mobile App        | 1           |
 <br>
 <br>
+
 # 🧠 Explanation of the Code
 <br>
-1️⃣ Blynk Configuration
+
+# 1️⃣ Blynk Configuration
 
 **•** Template ID
 
@@ -49,7 +56,8 @@ The system is simple, scalable, and beginner-friendly for IoT enthusiasts.
 **•** WiFi Credentials
 
 These connect the ESP8266 to the Blynk Cloud.
-
+<br>
+<br>
 # 2️⃣ Relay Pin Definitions
 ```cpp
 #define relay1 D0
@@ -59,7 +67,8 @@ These connect the ESP8266 to the Blynk Cloud.
 ```
 
 Each relay is connected to a digital pin of NodeMCU.
-
+<br>
+<br>
 # 3️⃣ Virtual Pin Control
 
 ```cpp
@@ -71,7 +80,8 @@ When the button in the Blynk app changes state:
 ``` 1 ``` → Relay ON (LOW signal because relay is active LOW)
 
 ``` 0 ``` → Relay OFF (HIGH signal)
-
+<br>
+<br>
 # 4️⃣ Setup Function
 
 **•** Sets relay pins as OUTPUT.
@@ -79,7 +89,8 @@ When the button in the Blynk app changes state:
 **•** Turns all relays OFF initially.
 
 **•** Connects to WiFi and Blynk Cloud.
-
+<br>
+<br>
 # 5️⃣ Loop Function
 
 ```cpp
@@ -133,6 +144,7 @@ Ensure:
 
 <br>
 <br>
+
 # 📜 License
 
 This project is open-source and free to use for educational purposes.
