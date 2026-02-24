@@ -1,7 +1,7 @@
 /*
   Project: ESP8266 Based 4-Channel Home Automation using Blynk IoT
   Board  : NodeMCU (ESP8266)
-  Author : Your Name
+  Author : Panas Kulung
   Description:
   This project controls 4 relays (appliances) remotely using the
   Blynk IoT mobile application over WiFi.
