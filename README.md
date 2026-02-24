@@ -140,10 +140,6 @@ Ensure:
 **•** Set button mode to **Switch**
 <br>
 <br>
-# 📷 Project Preview
-
-<br>
-<br>
 
 # 📜 License
 
